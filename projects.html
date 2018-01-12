@@ -1,23 +1,60 @@
-<html>
+<html class="no-js" lang="en" >
+
 	<head>
-		<link rel="stylesheet" href="style.css">
+  		<meta charset="utf-8">
+  		<!-- If you delete this meta tag World War Z will become a reality -->
+  		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  		<title>Foundation 5</title>
+
+  		<!-- If you are using the CSS version, only link these 2 files, you may add app.css to use for your overrides if you like -->
+  		<link rel="stylesheet" href="CSSFrameworks/css/normalize.css">
+  		<link rel="stylesheet" href="CSSFrameworks/css/foundation.css">
+
+  		<!-- If you are using the gem version, you need this only -->
+  		<link rel="stylesheet" href="CSSFrameworks/css/app.css">
+
+  		<script src="CSSFrameworks/js/vendor/modernizr.js"></script>
+
 	</head>
-	<h1>My Website</h1>
 	<body>
-		<h2>Projects</h2>
-		<ul>
-			<li>
-				<a href="Projects/FordTrucks/index.html">Ford Trucks</a>
-			</li>
-			<li>
-				<a href="Projects/Bubbly/index.html">Bubbly</a>
-			</li>
-			<li>
-				<a href="Projects/TimeBall/index.html">TimeBall</a>
-			</li>
+		<div class="grid-container">
+			<div class="grid-x grid-padding-x">
+			    <div class="large-12 cell">
+					<h1>
+						My Website
+					</h1>
+					<nav>
+							<ul class="menu">
+								<li><a href="index.html">Home</a></li>
+								<li><a href="about.html">About</a></li>
+							</ul>
+					</nav>
+			    </div>
+			</div>
+			<div class="grid-x grid-padding-x">
+				<div class="large-12 cell">
+				  	<div class="callout">
+					<h3>Projects</h3>
+					<p>These are some examples of projects I have done over the years.</p>
+					<div class="grid-x grid-padding-x">
+					  	<div class="large-4 medium-4 cell">
+							<p><a href="Projects/FordTrucks/index.html">Ford Trucks</a><br />This is a project that focused on the idea of using an IP to create a game. No copyright infringement intended.</p>
+					  	</div>
+					  	<div class="large-4 medium-4 cell">
+							<p><a href="Projects/Bubbly/index.html">Bubbly</a><br />This project was done to show the full life cycle of a game. It took ten weeks to complete and involved concepting, grayboxing, and asset acquisition.</p>
+						</div>
+						<div class="large-4 medium-4 cell">
+							<p><a href="Projects/TimeBall/index.html">Time Escape</a><br />This project was my first attempt at a game in Unity.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		  <!-- body content here -->
+  		<script src="CSSFrameworks/js/vendor/jquery.js"></script>
+  		<script src="CSSFrameworks/js/foundation.min.js"></script>
+  		<script>
+    	$(document).foundation();
+  		</script>
 	</body>
-	<footer>
-		<a href="index.html">Home</a>
-		<a href="about.html">About</a>
-	</footer>
 </html>
