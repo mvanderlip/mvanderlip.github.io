@@ -1,11 +1,65 @@
-<html>
+<html class="no-js" lang="en" >
+
 	<head>
-		<link rel="stylesheet" href="style.css">
+  		<meta charset="utf-8">
+  		<!-- If you delete this meta tag World War Z will become a reality -->
+  		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  		<title>Foundation 5</title>
+
+  		<!-- If you are using the CSS version, only link these 2 files, you may add app.css to use for your overrides if you like -->
+  		<link rel="stylesheet" href="CSSFrameworks/css/normalize.css">
+  		<link rel="stylesheet" href="CSSFrameworks/css/foundation.css">
+
+  		<!-- If you are using the gem version, you need this only -->
+  		<link rel="stylesheet" href="CSSFrameworks/css/app.css">
+
+  		<script src="CSSFrameworks/js/vendor/modernizr.js"></script>
+
 	</head>
-	<h1>My Website</h1>
 	<body>
-		<p>About</p>
+		<div class="grid-container">
+			<div class="grid-x grid-padding-x">
+			    <div class="large-12 cell">
+					<div class="callout">
+						<h2>
+							My Website
+						</h2>
+						<nav>
+								<ul class="menu">
+									<li><a href="index.html">Home</a></li>
+									<li><a href="projects.html">Projects</a></li>
+									<li><a href="about.html">About</a></li>
+								</ul>
+						</nav>
+					</div>
+			    </div>
+			</div>
+			<div class="grid-x grid-padding-x">
+				<div class="large-12 cell">
+				  	<div class="callout">
+					<h3>About</h3>
+					<p>This is a page all about me.</p>
+					<h4>
+						Education
+					</h4>
+					<p>
+						Neumont.
+					</p>
+					<h4>
+						Contact Info
+					</h4>
+					<address>
+						Email: <a href="mailto:mjvanderlip0@gmail.com">Michael Vanderlip</a>.<br>
+						Mail: 350 S 600 E
+					</address>
+				</div>
+			</div>
+		</div>
+		  <!-- body content here -->
+  		<script src="CSSFrameworks/js/vendor/jquery.js"></script>
+  		<script src="CSSFrameworks/js/foundation.min.js"></script>
+  		<script>
+    	$(document).foundation();
+  		</script>
 	</body>
-	<a href="index.html">Home</a>
-    <a href="projects.html">My Projects</a>
 </html>
