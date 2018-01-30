@@ -1,25 +1,63 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html class="no-js" lang="en" >
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <!-- If you delete this meta tag World War Z will become a reality -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foundation 5</title>
+
+    <!-- If you are using the CSS version, only link these 2 files, you may add app.css to use for your overrides if you like -->
+    <!--<link rel="stylesheet" href="CSSFrameworks/css/normalize.css">-->
+
     <title>Unity WebGL Player | Bubbly</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
+    <link rel="stylesheet" href="../../CSSFrameworks/css/foundation.css">
+
+    <!-- If you are using the gem version, you need this only -->
+    <link rel="stylesheet" href="../../CSSFrameworks/css/app.css">
     <script src="TemplateData/UnityProgress.js"></script>  
     <script src="Build/UnityLoader.js"></script>
     <script>
       var gameInstance = UnityLoader.instantiate("gameContainer", "Build/Bubbly.json", {onProgress: UnityProgress});
     </script>
+
   </head>
   <body>
-    <div class="webgl-content">
-      <div id="gameContainer" style="width: 960px; height: 600px"></div>
-      <div class="footer">
-        <div class="webgl-logo"></div>
-        <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
-        <div class="title">Bubbly</div>
+    <div class="grid-container">
+      <div class="grid-x grid-padding-x">
+			  <div class="large-12 cell">
+					<div class="callout">
+						<h2>
+							My Website
+						</h2>
+						<nav>
+							<ul class="menu">
+								<li><a href="index.html">Home</a></li>
+								<li><a href="projects.html">Projects</a></li>
+								<li><a href="about.html">About</a></li>
+							</ul>
+						</nav>
+					</div>
+        </div>
+      </div>
+      <div class="grid-x grid-padding-x">
+        <div class="large-12 cell">
+          <div class="webgl-content">
+          <div id="gameContainer" style="width: 960px; height: 600px"></div>
+          <div class="footer">
+          <div class="webgl-logo"></div>
+          <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
+          <div class="title">Bubbly</div>
+        </div>
+      </div>
+      </div>
       </div>
     </div>
+    <script src="../../CSSFrameworks/js/vendor/jquery.js"></script>
+    <script src="../../CSSFrameworks/js/vendor/foundation.min.js"></script>
+    <script>
+    $(document).foundation();
+    </script>
   </body>
 </html>
