@@ -44,8 +44,15 @@
       <div class="grid-x grid-padding-x">
         <div class="large-12 cell">
           <div class="callout">
-          <div class="webgl-content" class="float-center">
-          <div id="gameContainer" style="width: 960px; height: 600px"></div>
+            <div id="outer">
+              <div id="inner">
+                  <div class="webgl-content">
+                      <div id="gameContainer" style="width: 960px; height: 600px">
+                    </div>
+              </div>
+
+            </div>
+
           <div class="footer">
           <div class="webgl-logo"></div>
           <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
