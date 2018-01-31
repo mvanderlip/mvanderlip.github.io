@@ -12,9 +12,17 @@ body {
 {
     background-color: rgb(233, 233, 233);
     padding: 20px;
+    transition: all .3s ease;
+    -webkit-transition: all .3s ease;
 }
 
 .fillcell:hover
 {
-    transform: scale(1.01,1.01);
+    transform: scale(1.025,1.025);
 }
+
+.fillCallout
+{
+    padding: 30px;
+}
+
