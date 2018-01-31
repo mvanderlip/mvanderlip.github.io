@@ -20,7 +20,7 @@ body {
 .fillcell:hover
 {
     transform: scale(1.025,1.025);
-    box-shadow: 10px 10px 10px black;
+    box-shadow: 7px 7px 10px black;
 }
 
 .fillCallout
