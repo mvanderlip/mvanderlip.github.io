@@ -5,4 +5,16 @@ body {
 .cell
 {
     margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.fillcell
+{
+    background-color: rgb(233, 233, 233);
+    padding: 20px;
+}
+
+.fillcell:hover
+{
+    transform: scale(1.01,1.01);
 }
