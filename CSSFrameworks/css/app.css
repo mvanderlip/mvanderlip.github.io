@@ -11,7 +11,7 @@ body {
 .fillcell
 {
     background-color: rgb(233, 233, 233);
-    padding: 20px;
+    padding: 15px;
     transition: all .3s ease;
     -webkit-transition: all .3s ease;
     box-shadow: 5px 5px 10px black;
@@ -26,5 +26,10 @@ body {
 .fillCallout
 {
     padding: 30px;
+}
+
+.description
+{
+    margin-top: 20px;
 }
 
