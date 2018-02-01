@@ -45,3 +45,16 @@ body {
     color: black;
 }
 
+nav ul li a
+{
+    background-color: white;
+    color: gray;
+}
+
+nav ul li a:hover
+{
+    transition: all 1s ease;
+    background-color: lightgray;
+    color: black;
+}
+
