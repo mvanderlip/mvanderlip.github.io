@@ -11,28 +11,30 @@
   		<link rel="stylesheet" href="CSSFrameworks/css/foundation.css">
 
   		<!-- If you are using the gem version, you need this only -->
-  		<link rel="stylesheet" href="CSSFrameworks/css/app.css">
+		  <link rel="stylesheet" href="CSSFrameworks/css/app.css">
 
-	</head>
-	<body>
-		<div class="grid-container">
+		  <link rel="stylesheet" href="CSSFrameworks/progressive-image.js-master/css/progressive-image.css">
+		  
+		  <div class="grid-container">
 			<div class="grid-x grid-padding-x">
 			    <div class="large-12 cell">
 					<div class="callout">
-						<h2>
-							<a href="index.html"><img src="favicon.ico"></img></a>
-							Michael Vanderlip - Game Developer
+						<h2 class="text-center">
+							Michael Vanderlip <a href="index.html"><img src="favicon.ico"></img></a> Game Developer
 						</h2>
 						<nav>
-								<ul class="menu">
-									<li><a href="index.html">Home</a></li>
-									<li><a href="projects.html">Projects</a></li>
-									<li><a href="about.html">About</a></li>
-								</ul>
+							<ul class="menu align-center text-center">
+								<li><a href="index.html">Home</a></li>
+								<li class="is-active"><a href="projects.html">Projects</a></li>
+								<li><a href="about.html">About</a></li>
+							</ul>
 						</nav>
 					</div>
 			    </div>
 			</div>
+
+	</head>
+	<body>
 			<div class="grid-x grid-padding-x">
 				<div class="large-12 cell">
 				  	<div class="callout fillCallout">
@@ -41,7 +43,11 @@
 					<h4 class="text-center">Game Projects</h4>
 					<div class="large-12 cell fillcell">
 							<h5 class="text-center"><a href="Projects/Unstable/index.html">Unstable</a></h5>
-							<a href="Projects/Unstable/index.html"><img src="Projects/ProjectImages/BetterUnstable.JPG" class="float-center"></a>
+							<a href="Projects/Unstable/index.html">
+								<a href="Projects/ProjectImages/BetterUnstable.JPG" class="progressive replace float-center">
+									<img src="Projects/ProjectImages/BetterUnstableTiny.JPG" class="preview" alt="image" />
+								</a>
+							</a>
 							<p class="text-center description">This is my capstone project. It is a cumlination of all the techniques I learned during my studies.</p>
 					</div>
 					<div class="grid-x grid-padding-x grid-margin-x">
@@ -77,6 +83,7 @@
   		<script src="CSSFrameworks/js/vendor/foundation.min.js"></script>
   		<script>
     	$(document).foundation();
-  		</script>
+		</script>
+		<script src="CSSFrameworks/progressive-image.js-master/js/progressive-image.js"></script>
 	</body>
 </html>
