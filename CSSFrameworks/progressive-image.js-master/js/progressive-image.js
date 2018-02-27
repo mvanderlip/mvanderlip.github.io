@@ -63,7 +63,7 @@ if (window.addEventListener && window.requestAnimationFrame && document.getEleme
 
   // replace with full image
   function loadFullImage(item) {
-
+    console.log(item.parentNode);
     var href = item && (item.getAttribute('data-href') || item.href);
     if (!href) return;
 
@@ -77,14 +77,14 @@ if (window.addEventListener && window.requestAnimationFrame && document.getEleme
     img.className = 'reveal';
     if (img.complete) addImg();
     else img.onload = addImg;
-
+    if(item.parentNode.className == 'linkimg'){item.href = item.parentNode.children[0].href;}
     // replace image
     function addImg() {
 
       requestAnimationFrame(function() {
 
         // disable click
-        if (href === item.href) {
+        if (href === item.href && item.parentNode.className != 'linkimg') {
           item.style.cursor = 'default';
           item.addEventListener('click', function(e) { e.preventDefault(); }, false);
         }
