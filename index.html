@@ -59,13 +59,19 @@
 						</div>
 						<div class="large-6 medium-4 cell">
 							<p><a href="contact.html">Contact</a><br />This is where you will find my contact information.</p>
+							<form action="/file-upload" class="dropzone">
+								<div class="fallback">
+									<input name="file" type="file" multiple />
+								</div>
+							</form>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 		  <!-- body content here -->
-  		<script src="CSSFrameworks/js/vendor/jquery.js"></script>
+			<script src="CSSFrameworks/js/vendor/jquery.js"></script>
+			<script src="./path/to/dropzone.js"></script>
   		<script src="CSSFrameworks/js/vendor/foundation.min.js"></script>
   		<script>
     	$(document).foundation();
